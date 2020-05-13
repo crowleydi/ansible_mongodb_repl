@@ -8,3 +8,19 @@ docker run --detach --rm --hostname mongo0 --name mongo0 --network mynet --ip 17
 # start "slaves"
 docker run --detach --rm --hostname mongo1 --name mongo1 --network mynet --ip 172.18.0.4 rastasheep/ubuntu-sshd
 docker run --detach --rm --hostname mongo2 --name mongo2 --network mynet --ip 172.18.0.5 rastasheep/ubuntu-sshd
+
+#
+# copy our ssh key to the hosts so we can login automatically
+ssh-copy-id root@mongo0
+ssh-copy-id root@mongo1
+ssh-copy-id root@mongo2
+
+echo
+echo
+echo "If you haven't already, please add the following lines to your /etc/hosts file: "
+echo
+echo 172.18.0.3 mongo0
+echo 172.18.0.4 mongo1
+echo 172.18.0.5 mongo2
+echo 
+echo 

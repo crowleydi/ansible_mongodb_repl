@@ -1,0 +1,6 @@
+[primary]
+mongo0
+
+[secondary]
+mongo1
+mongo2
