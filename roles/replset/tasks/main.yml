@@ -1,0 +1,4 @@
+- name: "Configuring mongo for replset rs0"
+  lineinfile: name=/etc/mongodb.conf line="replSet=rs0"
+  notify:
+  - restart-mongo

@@ -1,0 +1,5 @@
+#- name: "Updating apt repository"
+#  command: apt update
+
+- name: "Installing mongodb on the node"
+  apt: pkg=mongodb state=latest
