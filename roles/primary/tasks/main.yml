@@ -1,5 +1,10 @@
 - name: "Copying rs initiate script"
-  copy: src=../files/rs_initiate.sh dest=/tmp/rs_initiate.sh mode=0755 owner=root group=root
+  copy:
+    src: ../files/rs_initiate.sh
+    dest: /tmp/rs_initiate.sh
+    owner: root
+    group: root
+    mode: 0755
 
 - name: "Initiating primary node replication"
   command: /tmp/rs_initiate.sh

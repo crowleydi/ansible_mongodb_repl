@@ -2,4 +2,7 @@
 #  command: apt update
 
 - name: "Installing mongodb on the node"
-  apt: pkg=mongodb state=latest
+  apt:
+    update_cache: yes
+    name: mongodb
+    state: present

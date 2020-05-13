@@ -1,2 +1,7 @@
 - name: "Creating file team.txt"
-  copy: src=../files/team.txt dest=/root/team.txt owner=root group=root mode=0644
+  copy:
+    src: ../files/team.txt
+    dest: /root/team.txt
+    owner: root
+    group: root
+    mod: 0644
