@@ -1,2 +1,2 @@
 #!/bin/sh
-ansible-playbook -u root playbook.yml
+ansible-playbook playbook.yml
