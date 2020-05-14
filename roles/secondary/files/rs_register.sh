@@ -4,7 +4,7 @@ HOST=`hostname`
 mongo --host $MASTER <<EOF
 rs.add({"host": "$HOST", "priority": 0, "votes": 0});
 EOF
-sleep 5
+sleep 8
 mongo --host $MASTER <<EOF
 var cfg=rs.conf();
 var n;

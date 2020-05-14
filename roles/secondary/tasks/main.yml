@@ -8,5 +8,3 @@
 
 - name: "Initiating secondary node registration"
   command: /root/rs_register.sh
-  notify:
-    - restart-mongo

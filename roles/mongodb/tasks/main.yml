@@ -10,3 +10,11 @@
     owner: root
     group: root
     mode: 0755
+
+- name: "Copying reset script"
+  copy:
+    src: ../files/reset.sh
+    dest: /root/reset.sh
+    owner: root
+    group: root
+    mode: 0755
