@@ -15,7 +15,7 @@ To start the three containers for the replica set, use:
 
 When copying ssh keys to the nodes, you will be prompted to enter a password for each node. The default password is **root**.
 
-To run the playbook and create the replica set, use:
+To run the playbook and create the replica set, run the following command. Please note that occasionally the Docker containers have shown to run into issues when installing or restarting MongoDB. We found that we simply only need to re-run the Ansible playbook when this occurs and the issue goes away.
 
 ```
 ./run_playbook.sh
