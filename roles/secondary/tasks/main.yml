@@ -1,6 +1,6 @@
 - name: "Copying rs register script"
   template:
-    src: ../files/rs_register.sh
+    src: "{{rsRegisterScript}}"
     dest: /root/rs_register.sh
     owner: root
     group: root

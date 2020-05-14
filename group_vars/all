@@ -1,0 +1,5 @@
+---
+# Global variable file
+
+replicaSetName: rs0
+rsRegisterScript: ../files/rs_register.sh

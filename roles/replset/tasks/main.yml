@@ -7,6 +7,6 @@
 - name: "Configuring mongo for replset rs0"
   lineinfile:
     path: /etc/mongodb.conf
-    line: replSet=rs0
+    line: replSet= "{{replicaSetName}}"
   notify:
   - restart-mongo
