@@ -1,8 +1,12 @@
-#- name: "Updating apt repository"
-#  command: apt update
-
 - name: "Installing mongodb on the node"
   apt:
-    update_cache: yes
     name: mongodb
     state: present
+
+- name: "Copying restart script"
+  copy:
+    src: ../files/restart.sh
+    dest: /root/restart.sh
+    owner: root
+    group: root
+    mode: 0755

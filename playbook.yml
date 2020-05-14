@@ -10,3 +10,7 @@
 - hosts: primary
   roles:
   - primary
+
+- hosts: secondary
+  roles:
+  - secondary

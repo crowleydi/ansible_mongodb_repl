@@ -1,3 +1,9 @@
+- name: "Setting mongo binding port"
+  lineinfile:
+    path: /etc/mongodb.conf
+    regexp: '^bind_ip'
+    line: bind_ip=0.0.0.0
+
 - name: "Configuring mongo for replset rs0"
   lineinfile:
     path: /etc/mongodb.conf

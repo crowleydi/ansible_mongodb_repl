@@ -4,4 +4,4 @@
     dest: /root/team.txt
     owner: root
     group: root
-    mod: 0644
+    mode: 0644

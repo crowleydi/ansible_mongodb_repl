@@ -1,0 +1,12 @@
+- name: "Copying rs register script"
+  template:
+    src: ../files/rs_register.sh
+    dest: /root/rs_register.sh
+    owner: root
+    group: root
+    mode: 0755
+
+- name: "Initiating secondary node registration"
+  command: /root/rs_register.sh
+  notify:
+    - restart-mongo
